@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+      <record model="ir.ui.view" id="view_task_form_colorpicker_inherit">
+          <field name="name">Color Picker on task</field>
+          <field name="model">project.task</field>
+          <field name="inherit_id" ref="project.view_task_form2"/>
+          <field name="arch" type="xml">
+                <xpath expr="//field[@name='description']" position="after">
+                  <field name="colorpicker" widget="colorpicker"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
