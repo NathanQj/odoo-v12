@@ -16,159 +16,157 @@ class ResCompany(models.Model):
 
     SCSS_TEMPLATE = """
         body {
-
+            //Based on Main Color
             .o_main_navbar > ul > li > a:hover, .o_main_navbar > ul > li > label:hover {
-                color: %(color_navbar_bg)s !important;
+                color: %(color_main)s !important;
             }
             li.o_user_menu a.dropdown-toggle {
-                background: -webkit-linear-gradient(left, %(color_navbar_bg_hover)s 0%%, %(color_navbar_bg)s 100%%);
-                background: linear-gradient(to right, %(color_navbar_bg_hover)s 0%%, %(color_navbar_bg)s 100%%);
+                background: -webkit-linear-gradient(left, %(color_main_hover)s 0%%, %(color_main)s 100%%);
+                background: linear-gradient(to right, %(color_main_hover)s 0%%, %(color_main)s 100%%);
             }
             .oe_kanban_avatar {
                 width: 45px !important;
                 height: 45px !important;
             }
             .o_user_menu a.dropdown-toggle:hover {
-                background: linear-gradient(to right, %(color_navbar_bg_hover)s 0%%, %(color_navbar_bg)s 100%%) !important;
+                background: linear-gradient(to right, %(color_main_hover)s 0%%, %(color_main)s 100%%) !important;
             }
             .o_main_navbar > a:hover, .o_main_navbar > a:focus, .o_main_navbar > button:hover, .o_main_navbar > button:focus {
-                color: %(color_navbar_bg)s !important;
+                color: %(color_main)s !important;
             }
             .o_main_navbar > a, .o_main_navbar > button {
-                color: %(color_navbar_text)s !important;
+                color: %(color_main_texts)s !important;
             }
             .o_web_studio_navbar_item {
-                background-color: %(color_navbar_bg_hover)s !important;
+                background-color: %(color_main_hover)s !important;
                 border-radius: 20px;
             }
 
             .o_main_navbar .show .dropdown-toggle {
-                color: %(color_navbar_bg)s;
+                color: %(color_main)s;
             }
             .dropdown-menu a:hover {
-                color: %(color_navbar_bg)s !important;
+                color: %(color_main)s !important;
             }
             .btn-primary {
-                background-color: %(color_navbar_bg)s;
-                border-color: %(color_navbar_bg)s;
+                background-color: %(color_main)s;
+                border-color: %(color_main)s;
             }
             .o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.btn-primary.disabled {
-                color: %(color_navbar_bg)s;
+                color: %(color_main)s;
             }
             .o_mail_systray_item .o_notification_counter {
-                background: %(color_navbar_bg)s;
+                background: %(color_main)s;
             }
             .o_searchview .o_searchview_facet .o_searchview_facet_label {
-                background-color: %(color_navbar_bg)s;
+                background-color: %(color_main)s;
             }
             .o_control_panel button.btn.btn-secondary.o_button_import {
-                color: %(color_navbar_bg)s;
+                color: %(color_main)s;
             }
             .o_control_panel .btn-secondary:not(:disabled):not(.disabled):active, .o_control_panel .btn-secondary:not(:disabled):not(.disabled).active, .o_control_panel .show > .btn-secondary.dropdown-toggle {
-                color: %(color_navbar_bg)s;
-                border-color: %(color_navbar_bg)s;
+                color: %(color_main)s;
+                border-color: %(color_main)s;
             }
             .o_control_panel .btn-secondary {
-                color: %(color_navbar_text)s;
+                color: %(color_main_texts)s;
             }
             button.o_dropdown_toggler_btn.btn.btn-secondary.dropdown-toggle {
                 color: #424542 !important;
             }
             .o_control_panel .btn-secondary:hover {
-                color: %(color_navbar_bg)s;
-                border-color: %(color_navbar_bg)s;
+                color: %(color_main)s;
+                border-color: %(color_main)s;
             }
             .o_calendar_container .o_calendar_sidebar_container .ui-datepicker table .ui-state-active {
-                background-color: %(color_navbar_bg)s;
-            }
-            .ui-autocomplete .ui-menu-item.ui-state-focus {
-                background-color: %(color_navbar_bg)s;
+                background-color: %(color_main)s;
             }
             .o_field_widget.badge.badge-primary {
-                background: %(color_navbar_bg)s;
+                background: %(color_main)s;
             }
             .o_form_view .o_form_uri {
-                color: %(color_navbar_bg)s;
+                color: %(color_main)s;
             }
             span.o_stat_value {
-                color: %(color_navbar_bg)s;
+                color: %(color_main)s;
             }
             .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-                color: %(color_navbar_bg)s !important;
-                border: 1px solid %(color_navbar_bg)s;
+                color: %(color_main)s !important;
+                border: 1px solid %(color_main)s;
             }
 
             .o_form_view .o_notebook > .nav.nav-tabs > .nav-item > .nav-link.active:focus,
             .o_form_view .o_notebook > .nav.nav-tabs > .nav-item > .nav-link.active:active{
-                border-top-color: %(color_navbar_bg)s;
+                border-top-color: %(color_main)s;
             }
 
             .btn-secondary {
-                color: %(color_navbar_text)s !important;
+                color: %(color_main_texts)s !important;
             }
 
             .o_mail_discuss .o_mail_discuss_sidebar .o_mail_discuss_item:hover {
-                color: %(color_navbar_bg)s;
+                color: %(color_main)s;
             }
             .o_mail_discuss .o_mail_discuss_sidebar .o_mail_discuss_item {
-                color: %(color_navbar_text)s;
+                color: %(color_main_texts)s;
             }
 
             .o_mail_discuss .o_mail_discuss_sidebar .o_mail_sidebar_title h4.o_mail_open_channels:hover {
-                color: %(color_navbar_bg)s;
+                color: %(color_main)s;
             }
             .o_mail_discuss .o_mail_discuss_sidebar .o_mail_sidebar_title h4.o_mail_open_channels {
-                color: %(color_navbar_text)s;
+                color: %(color_main_texts)s;
             }
             .o_mail_discuss .o_mail_discuss_sidebar .o_mail_sidebar_title .o_add:hover, .o_mail_discuss .o_mail_discuss_sidebar .o_mail_sidebar_title .o_add:focus, .o_mail_discuss .o_mail_discuss_sidebar .o_mail_sidebar_title .o_add.focus {
-                color: %(color_navbar_bg)s;
+                color: %(color_main)s;
             }
             .o_mail_discuss .o_mail_discuss_sidebar .o_mail_sidebar_title .o_add {
-                color: %(color_navbar_text)s;
+                color: %(color_main_texts)s;
             }
             .datepicker .table-sm > tbody > tr > td.active, .datepicker .table-sm > tbody > tr > td .active {
-                background-color: %(color_navbar_bg)s;
+                background-color: %(color_main)s;
             }
             .datepicker .table-sm > thead {
-                background-color: %(color_navbar_bg)s;
+                background-color: %(color_main)s;
             }
             .cybro-main-menu .input-group-text {
-                background-color: %(color_navbar_bg)s !important;
+                background-color: %(color_main)s !important;
             }
             @media (min-width: 767px) {
             .o_web_client .o_mobile_search .o_mobile_search_header {
-                background-color: %(color_navbar_bg)s !important;
+                background-color: %(color_main)s !important;
                 }
                     button.o_enable_searchview.btn.fa.fa-search {
-                    background: %(color_navbar_bg)s !important;
+                    background: %(color_main)s !important;
                 }
             }
             .o_mail_discuss .o_mail_discuss_sidebar .o_mail_discuss_item > .badge {
-                background-color: %(color_navbar_bg)s !important;
+                background-color: %(color_main)s !important;
             }
             a:hover {
-                color: %(color_navbar_bg)s;
+                color: %(color_main)s !important;
             }
             a {
-                color: %(color_navbar_text)s;
+                color: %(color_main_texts)s;
             }
             i.fa.fa-th-large {
-                color: %(color_navbar_bg)s !important;
+                color: %(color_main)s !important;
             }
             .btn-primary:hover {
-                background: %(color_navbar_bg_hover)s !important;
-                border-color: %(color_navbar_bg_hover)s;
+                background: %(color_main_hover)s !important;
+                border-color: %(color_main_hover)s;
             }
         }
     """
 
     company_colors = fields.Serialized()
-    color_navbar_bg = fields.Char('Navbar Background Color',
+    color_main = fields.Char('Background Color',
                                   sparse='company_colors')
-    color_navbar_bg_hover = fields.Char(
-        'Navbar Background Color Hover', sparse='company_colors')
-    color_navbar_text = fields.Char('Navbar Text Color',
+    color_main_hover = fields.Char(
+        'Background Color Hover', sparse='company_colors')
+    color_main_texts = fields.Char('Main Texts Color',
                                     sparse='company_colors')
+
     scss_modif_timestamp = fields.Char('SCSS Modif. Timestamp')
 
     @api.model_create_multi
@@ -190,9 +188,9 @@ class ResCompany(models.Model):
     @api.multi
     def write(self, values):
         if not self.env.context.get('ignore_company_color', False):
-            fields_to_check = ('color_navbar_bg',
-                               'color_navbar_bg_hover',
-                               'color_navbar_text')
+            fields_to_check = ('color_main',
+                               'color_main_hover',
+                               'color_main_texts')
             if 'logo' in values:
                 if values['logo']:
                     _r, _g, _b = image_to_rgb(convert_to_image(values['logo']))
@@ -204,9 +202,9 @@ class ResCompany(models.Model):
                     # Grayscale human vision perception (Rec. 709 values)
                     _a = 1 - (0.2126 * _r + 0.7152 * _g + 0.0722 * _b)
                     values.update({
-                        'color_navbar_bg': n_rgb_to_hex(_r, _g, _b),
-                        'color_navbar_bg_hover': n_rgb_to_hex(_rd, _gd, _bd),
-                        'color_navbar_text': '#000' if _a < 0.5 else '#fff',
+                        'color_main': n_rgb_to_hex(_r, _g, _b),
+                        'color_main_hover': n_rgb_to_hex(_rd, _gd, _bd),
+                        'color_main_texts': '#000' if _a < 0.5 else '#fff',
                     })
                 else:
                     values.update(self.default_get(fields_to_check))
@@ -227,11 +225,11 @@ class ResCompany(models.Model):
         # or add custom values
         values = dict(self.company_colors or {})
         values.update({
-            'color_navbar_bg': (values.get('color_navbar_bg')
+            'color_main': (values.get('color_main')
                                 or '$o-brand-odoo'),
-            'color_navbar_bg_hover': (values.get('color_navbar_bg_hover')
+            'color_main_hover': (values.get('color_main_hover')
                 or '$o-navbar-inverse-link-hover-bg'),
-            'color_navbar_text': (values.get('color_navbar_text') or '#FFF'),
+            'color_main_texts': (values.get('color_main_texts') or '#FFF'),
         })
         return values
 

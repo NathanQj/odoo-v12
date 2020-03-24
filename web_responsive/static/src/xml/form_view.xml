@@ -23,7 +23,7 @@
                     aria-haspopup="true"
                     aria-expanded="false">
                 <t t-call="web_responsive.icon_button">
-                    <t t-set="icon" t-value="'cogs'"/>
+                    <!-- <t t-set="icon" t-value="'cogs'"/> -->
                     <t t-set="label">Quick actions</t>
                 </t>
             </button>
@@ -46,28 +46,28 @@
         <!-- Add responsive icons to buttons -->
         <t t-jquery=".o_form_button_edit" t-operation="inner">
             <t t-call="web_responsive.icon_button">
-                <t t-set="icon" t-value="'pencil'"/>
+                <!-- <t t-set="icon" t-value="'pencil'"/> -->
                 <t t-set="label">Edit</t>
             </t>
         </t>
 
         <t t-jquery=".o_form_button_create" t-operation="inner">
             <t t-call="web_responsive.icon_button">
-                <t t-set="icon" t-value="'plus'"/>
+                <!-- <t t-set="icon" t-value="'plus'"/> -->
                 <t t-set="label">Create</t>
             </t>
         </t>
 
         <t t-jquery=".o_form_button_save" t-operation="inner">
             <t t-call="web_responsive.icon_button">
-                <t t-set="icon" t-value="'check'"/>
+                <!-- <t t-set="icon" t-value="'check'"/> -->
                 <t t-set="label">Save</t>
             </t>
         </t>
 
         <t t-jquery=".o_form_button_cancel" t-operation="inner">
             <t t-call="web_responsive.icon_button">
-                <t t-set="icon" t-value="'times'"/>
+                <!-- <t t-set="icon" t-value="'times'"/> -->
                 <t t-set="label">Close</t>
             </t>
         </t>
@@ -77,7 +77,7 @@
         <!-- Add responsive icons to buttons -->
         <t t-jquery="button" t-operation="inner">
             <t t-call="web_responsive.icon_button">
-                <t t-set="icon" t-value="'plus'"/>
+                <!-- <t t-set="icon" t-value="'plus'"/> -->
                 <t t-set="label" t-value="create_text || _t('Create')"/>
             </t>
         </t>
@@ -92,21 +92,21 @@
         <!-- Add responsive icons to buttons -->
         <t t-jquery=".o_list_button_add" t-operation="inner">
             <t t-call="web_responsive.icon_button">
-                <t t-set="icon" t-value="'plus'"/>
+                <!-- <t t-set="icon" t-value="'plus'"/> -->
                 <t t-set="label">Create</t>
             </t>
         </t>
 
         <t t-jquery=".o_list_button_save" t-operation="inner">
             <t t-call="web_responsive.icon_button">
-                <t t-set="icon" t-value="'check'"/>
+                <!-- <t t-set="icon" t-value="'check'"/> -->
                 <t t-set="label">Save</t>
             </t>
         </t>
 
         <t t-jquery=".o_list_button_discard" t-operation="inner">
             <t t-call="web_responsive.icon_button">
-                <t t-set="icon" t-value="'times'"/>
+                <!-- <t t-set="icon" t-value="'times'"/> -->
                 <t t-set="label">Close</t>
             </t>
         </t>
@@ -119,17 +119,17 @@
             <t t-set="label" t-value="section.label"/>
             <t t-if="section.name == 'files'">
                 <t t-call="web_responsive.icon_button">
-                    <t t-set="icon" t-value="'paperclip'"/>
+                    <!-- <t t-set="icon" t-value="'paperclip'"/> -->
                 </t>
             </t>
             <t t-elif="section.name == 'print'">
                 <t t-call="web_responsive.icon_button">
-                    <t t-set="icon" t-value="'print'"/>
+                    <!-- <t t-set="icon" t-value="'print'"/> -->
                 </t>
             </t>
             <t t-elif="section.name == 'other'">
                 <t t-call="web_responsive.icon_button">
-                    <t t-set="icon" t-value="'wrench'"/>
+                    <!-- <t t-set="icon" t-value="'wrench'"/> -->
                 </t>
             </t>
             <t t-else="">
